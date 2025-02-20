@@ -117,10 +117,31 @@ footer {
 .gallery-item:hover {
     transform: scale(1.05);
 }
-nav ul li a:hover {
-    background-color: #05bfeef3;
-    color: #333;
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px 10px;
     border-radius: 5px;
-    transform: scale(1.1);
+    position: relative;
+    display: inline-block;
+    transition: color 0.3s ease;
 }
 
+nav ul li a:hover {
+    color: #05bfeef3; /* Cyan color for text */
+    text-shadow: 0 0 10px #05bfeef3, 0 0 20px #05bfeef3, 0 0 30px #05bfeef3; /* Cyan glow effect */
+    border: 2px solid #05bfeef3; /* Cyan border */
+    border-radius: 10px; /* Rounded border */
+    padding: 5px 12px;
+    animation: glowAnimation 1s infinite alternate; /* Animation for glow effect */
+}
+
+@keyframes glowAnimation {
+    0% {
+        box-shadow: 0 0 5px #05bfeef3, 0 0 10px #05bfeef3, 0 0 15px #05bfeef3;
+    }
+    100% {
+        box-shadow: 0 0 15px #05bfeef3, 0 0 20px #05bfeef3, 0 0 30px #05bfeef3;
+    }
+}
