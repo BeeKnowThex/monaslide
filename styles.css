@@ -117,3 +117,10 @@ footer {
 .gallery-item:hover {
     transform: scale(1.05);
 }
+nav ul li a:hover {
+    background-color: #05bfeef3;
+    color: #333;
+    border-radius: 5px;
+    transform: scale(1.1);
+}
+
